@@ -5,6 +5,7 @@
 #' @param n_obs class: numeric
 #' @keywords ecological momentary assessment data, intensive longitudinal data
 #' @import tidyverse
+#' @import nlme
 #' @examples
 #' calc_reliability(fit, n_obs=14)
 #' @export

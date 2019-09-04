@@ -5,7 +5,7 @@
 \title{ruf}
 \usage{
 iterative_reliability(data, varname, cluster_var = "studyday",
-  min_day = 0, max_day = 14, autocorrelated = T)
+  id_var = "id", min_day = 0, max_day = 14, autocorrelated = T)
 }
 \arguments{
 \item{data}{class: data frame}
@@ -13,6 +13,8 @@ iterative_reliability(data, varname, cluster_var = "studyday",
 \item{varname}{class: string}
 
 \item{cluster_var}{class: string}
+
+\item{id_var}{class: string}
 
 \item{min_day}{class: numeric}
 

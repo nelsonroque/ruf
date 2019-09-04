@@ -4,15 +4,17 @@
 #' @param data class: data frame
 #' @param varname class: string
 #' @param cluster_var class: string
+#' @param id_var class: string
 #' @param min_day class: numeric
 #' @param max_day class: numeric
 #' @param autocorrelated class: boolean
 #' @keywords ecological momentary assessment data, intensive longitudinal data
 #' @import tidyverse
+#' @import nlme
 #' @examples
 #' iterative_reliability(data, "response_time", "studyday", min_day=0, max_day=14, autocorrelated=T)
 #' @export
-iterative_reliability <- function(data, varname, cluster_var='studyday', min_day=0, max_day=14, autocorrelated=T) {
+iterative_reliability <- function(data, varname, cluster_var='studyday', id_var="id", min_day=0, max_day=14, autocorrelated=T) {
   cur.varname = varname
   
   reliability.data <- data.frame()
@@ -40,7 +42,7 @@ iterative_reliability <- function(data, varname, cluster_var='studyday', min_day
     
     #print(summary(day.fit))
     
-    cur.export <- calc_reliability(day.fit,avg.obs(day.data)) %>% 
+    cur.export <- calc_reliability(day.fit,avg_obs(day.data, id_var=id_var)) %>% 
       mutate(days = DAYS,
              variable = varname)
     

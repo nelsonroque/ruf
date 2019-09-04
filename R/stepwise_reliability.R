@@ -4,14 +4,16 @@
 #' @param data class: data frame
 #' @param varname class: string
 #' @param cluster_var class: string
+#' @param id_var class: string
 #' @param listen class: vector (which points of cluster_var do you want reliability for)
 #' @param autocorrelated class: boolean
 #' @keywords ecological momentary assessment data, intensive longitudinal data
 #' @import tidyverse
+#' @import nlme
 #' @examples
 #' stepwise_reliability(data, "response_time", "studyday", min_day=0, max_day=14, autocorrelated=T)
 #' @export
-stepwise_reliability <- function(data, varname, cluster_var='studyday', listen=c(1,2), autocorrelated=T) {
+stepwise_reliability <- function(data, varname, cluster_var='studyday', id_var="id", listen=c(1,2), autocorrelated=T) {
   cur.varname = varname
   
   uq = pull(data %>% ungroup() %>% select(cluster_var) %>% distinct())
@@ -38,7 +40,7 @@ stepwise_reliability <- function(data, varname, cluster_var='studyday', listen=c
                      na.action=na.exclude)
     }
     
-    cur.export <- calc_reliability(day.fit,avg.obs(day.data)) %>% 
+    cur.export <- calc_reliability(day.fit,avg_obs(day.data, id_var=id_var)) %>% 
       mutate(step = point,
              variable = varname)
     

@@ -5,7 +5,7 @@
 \title{ruf}
 \usage{
 stepwise_reliability(data, varname, cluster_var = "studyday",
-  listen = c(1, 2), autocorrelated = T)
+  id_var = "id", listen = c(1, 2), autocorrelated = T)
 }
 \arguments{
 \item{data}{class: data frame}
@@ -13,6 +13,8 @@ stepwise_reliability(data, varname, cluster_var = "studyday",
 \item{varname}{class: string}
 
 \item{cluster_var}{class: string}
+
+\item{id_var}{class: string}
 
 \item{listen}{class: vector (which points of cluster_var do you want reliability for)}
 
