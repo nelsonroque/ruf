@@ -9,7 +9,9 @@
 #' @param cov_fixed_effects class: string, vector of strings
 #' @param cov_random_effects class: string, vector of strings
 #' @keywords ecological momentary assessment data, intensive longitudinal data
-#' @import tidyverse, lme4
+#' @import tidyverse
+#' @import lme4
+#' @import tibble
 #' @examples
 #' wpcr(data = data, x = "X", y = "Y", id_var = "ID", cov_fixed_effects = NULL, cov_random_effects = NULL)
 #' @export

@@ -8,7 +8,6 @@ Authors@R:
            email = "nelsonroquejr@gmail.com",
            comment = c(ORCID = "0000-0003-1184-202X"))
 Description: An R Package of Random, but Useful Functions
-Depends: R (>= 3.5.0), tidyverse, readr, foreign, haven, stringr, lme4
 License: MIT
 Encoding: UTF-8
 LazyData: true

@@ -6,6 +6,7 @@
 #' @param time_format  class: string
 #' @keywords to add date features to timestamp
 #' @import tidyverse
+#' @import lubridate
 #' @examples
 #' add_metadate_cols(df)
 #' @export
