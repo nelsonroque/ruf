@@ -1,8 +1,11 @@
-# to be rebranded -- convenient functions for everyday use as well as analytic uses
+# ruf - An R Package of random, useful functions
+
+# Current Functions
+- iterative reliability | iterative_reliability()
+- stepwise reliability | stepwise_reliability()
+- within-person coupling reliability | wpcr()
 
 # Roadmap
 
-	- LMM2Pie
-	- ICCs for unconditional model
-	- centering automation (gmean, imena, imenagmean, gmeanimean
-	- within person coupling reliability
+- visual decomposition of variance from multilevel models
+- automation of centering (gmean, imean, imeangmean, gmeanimean)
