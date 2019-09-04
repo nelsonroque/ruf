@@ -13,7 +13,6 @@
 #' @examples
 #' wpcr(data = data, x = "X", y = "Y", id_var = "ID", cov_fixed_effects = NULL, cov_random_effects = NULL)
 #' @export
-#' 
 wpcr <- function(data = NULL, id_var = NULL, x = NULL, y = NULL, cov_fixed_effects = NULL, cov_random_effects = NULL) {
   
   # print status message
@@ -23,7 +22,6 @@ wpcr <- function(data = NULL, id_var = NULL, x = NULL, y = NULL, cov_fixed_effec
   print("Neubauer, A. B., Voelkle, M. C., Voss, A., & Mertens, U. K. (2019). Estimating reliability of within-person couplings in a multilevel framework. Journal of personality assessment, 1-12.")
   print("-------------------------------------------------")
   
-  # ==============================================================================================
   # STEP 1
   
   # prepare model formula
@@ -46,7 +44,6 @@ wpcr <- function(data = NULL, id_var = NULL, x = NULL, y = NULL, cov_fixed_effec
   # get Level 1 residual variance | eps_squared
   eps_squared <- attr(v, "sc") ** 2
   
-  # ==============================================================================================
   # STEP 2
   
   # run multilevel model predicting 
@@ -66,7 +63,6 @@ wpcr <- function(data = NULL, id_var = NULL, x = NULL, y = NULL, cov_fixed_effec
   # get Level 1 variance of the focal predictor X | within-person (Level 1) variance of the focal predictor X
   VarX <- attr(v2, "sc") ** 2
   
-  # ==============================================================================================
   # STEP 3
   
   # Compute for each Level 2 unit, how many data points there are 
@@ -93,8 +89,6 @@ wpcr <- function(data = NULL, id_var = NULL, x = NULL, y = NULL, cov_fixed_effec
               q90_wpcr = quantile(wpcr_i, probs=0.9, na.rm=T),
               max_wpcr = max(wpcr_i, na.rm=T))
   
-  # ==============================================================================================
-  # 
   # PREPARE OUTPUT
   
   # place all model parameters into a tibble

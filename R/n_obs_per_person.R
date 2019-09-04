@@ -9,7 +9,6 @@
 #' @examples
 #' n_obs_per_person(df)
 #' @export
-#' 
 n_obs_per_person <- function(data = NULL, id_var = NULL, expected_obs = NULL) {
   
   # get count of rows per person
