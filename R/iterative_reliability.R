@@ -22,8 +22,8 @@ iterative_reliability <- function(data, varname, cluster_var='studyday', id_var=
     # filter data
     day.data <- data %>% 
       filter(!!sym(cluster_var) >= min_day & !!sym(cluster_var) <= DAYS)
-    print(nrow(day.data))
-    cat(DAYS)
+    #print(nrow(day.data))
+    #cat(DAYS)
     
     if(autocorrelated){
       # specify models
