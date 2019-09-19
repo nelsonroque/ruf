@@ -1,3 +1,14 @@
+#' ruf
+
+#' @name lmm2pie
+#' @param fit class: model fit output object
+#' @param pkg class: string
+#' @keywords ecological momentary assessment data, intensive longitudinal data
+#' @import tidyverse
+#' @import nlme
+#' @examples
+#' lmm2pie(fit, pkg="lme4")
+#' @export
 lmm2pie <- function(fit, pkg="lme4") {
   
   pie.df <- tibble::as.tibble(lme4::VarCorr(fit)) %>%
@@ -21,17 +32,3 @@ lmm2pie <- function(fit, pkg="lme4") {
               summary = pie.sum,
               plot = pie.plot))
 }
-
-set.seed(516)
-df <- expand.grid(people=seq(1,100,1),
-                  days=seq(1,7,1),
-                  moments=seq(1,6,1))
-df$y <- rnorm(500,50,n=nrow(df))
-df$cov <- rnorm(30,6,n=nrow(df))
-
-fit <- lme4::lmer(y ~ (1 + cov | people/days), 
-                  data=df)
-
-o <- lmm2pie(fit)
-o$summary
-o$plot
