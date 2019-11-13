@@ -5,7 +5,7 @@
 \title{ruf}
 \usage{
 add_metadate_cols(df, time_var = "timestamp",
-  time_format = "\%m/\%d/\%Y")
+  time_format = "\%m/\%d/\%Y", time_origin = "1960-01-01")
 }
 \arguments{
 \item{df}{class: dataframe}
@@ -13,6 +13,8 @@ add_metadate_cols(df, time_var = "timestamp",
 \item{time_var}{class: string}
 
 \item{time_format}{class: string}
+
+\item{time_origin}{class: string}
 }
 \description{
 ruf
