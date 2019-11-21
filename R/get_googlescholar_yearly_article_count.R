@@ -6,6 +6,7 @@
 #' @param sleep_times class: Vector
 #' @param search_language class: string
 #' @import tidyverse
+#' @import rvest
 #' @examples
 #' get_googlescholar_yearly_article_count(search_term, search_years, sleep_times, search_language="en")
 #' @export
