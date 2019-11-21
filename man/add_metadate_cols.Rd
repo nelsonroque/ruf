@@ -4,8 +4,12 @@
 \alias{add_metadate_cols}
 \title{ruf}
 \usage{
-add_metadate_cols(df, time_var = "timestamp",
-  time_format = "\%m/\%d/\%Y", time_origin = "1960-01-01")
+add_metadate_cols(
+  df,
+  time_var = "timestamp",
+  time_format = "\%m/\%d/\%Y",
+  time_origin = "1960-01-01"
+)
 }
 \arguments{
 \item{df}{class: dataframe}

@@ -4,8 +4,15 @@
 \alias{rand_datetime}
 \title{ruf}
 \usage{
-rand_datetime(start_date, end_date, size, tz = "America/New_York",
-  rand_seed = 999, verbose = T, return_vector = F)
+rand_datetime(
+  start_date,
+  end_date,
+  size,
+  tz = "America/New_York",
+  rand_seed = 999,
+  verbose = T,
+  return_vector = F
+)
 }
 \arguments{
 \item{start_date}{class: numeric}

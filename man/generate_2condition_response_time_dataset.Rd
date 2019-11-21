@@ -4,9 +4,14 @@
 \alias{generate_2condition_response_time_dataset}
 \title{ruf}
 \usage{
-generate_2condition_response_time_dataset(n = 10, n_sessions = 1,
-  rt_mean = 500, rt_sd = 200, cond_cats = c("native", "script"),
-  rand_seed = 999)
+generate_2condition_response_time_dataset(
+  n = 10,
+  n_sessions = 1,
+  rt_mean = 500,
+  rt_sd = 200,
+  cond_cats = c("native", "script"),
+  rand_seed = 999
+)
 }
 \arguments{
 \item{n}{class: numeric}
