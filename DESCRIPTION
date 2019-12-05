@@ -1,6 +1,6 @@
 Package: ruf
 Title: An R Package of Random, but Useful Functions (RUF)
-Version: 0.0.0.9000
+Version: 0.0.0.9100
 Authors@R: 
     person(given = "Nelson",
            family = "Roque",
