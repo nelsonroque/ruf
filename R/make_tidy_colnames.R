@@ -13,7 +13,7 @@ make_tidy_colnames <- function(.data, unique = FALSE) {
   n <- gsub("%+", "_pct_", n)
   n <- gsub("\\$+", "_dollars_", n)
   n <- gsub("\\++", "_plus_", n)
-  n <- gsub("-+", "_minus_", n)
+  n <- gsub("-+", "_", n)
   n <- gsub("\\*+", "_star_", n)
   n <- gsub("#+", "_cnt_", n)
   n <- gsub("&+", "_and_", n)
