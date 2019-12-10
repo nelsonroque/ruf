@@ -4,14 +4,8 @@
 \alias{wpcr}
 \title{ruf}
 \usage{
-wpcr(
-  data = NULL,
-  id_var = NULL,
-  x = NULL,
-  y = NULL,
-  cov_fixed_effects = NULL,
-  cov_random_effects = NULL
-)
+wpcr(data = NULL, id_var = NULL, x = NULL, y = NULL,
+  cov_fixed_effects = NULL, cov_random_effects = NULL)
 }
 \arguments{
 \item{data}{class: dataframe}
@@ -25,6 +19,8 @@ wpcr(
 \item{cov_fixed_effects}{class: string, vector of strings}
 
 \item{cov_random_effects}{class: string, vector of strings}
+
+\item{id_var}{class: string}
 }
 \description{
 ruf

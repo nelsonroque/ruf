@@ -4,7 +4,8 @@
 \alias{get_time_travel_vector}
 \title{ruf}
 \usage{
-get_time_travel_vector(start_date, horizon_days = 14, horizon_direction = "+")
+get_time_travel_vector(start_date, horizon_days = 14,
+  horizon_direction = "+")
 }
 \arguments{
 \item{start_date}{class: POSIXlt}

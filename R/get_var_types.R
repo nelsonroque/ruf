@@ -1,6 +1,6 @@
 #' ruf
 
-#' @name add_metadate_cols
+#' @name get_var_types
 #' @param data class: dataframe
 #' @import tidyverse
 #' @examples

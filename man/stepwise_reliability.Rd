@@ -4,14 +4,8 @@
 \alias{stepwise_reliability}
 \title{ruf}
 \usage{
-stepwise_reliability(
-  data,
-  varname,
-  cluster_var = "studyday",
-  id_var = "id",
-  listen = c(1, 2),
-  autocorrelated = T
-)
+stepwise_reliability(data, varname, cluster_var = "studyday",
+  id_var = "id", listen = c(1, 2), autocorrelated = T)
 }
 \arguments{
 \item{data}{class: data frame}

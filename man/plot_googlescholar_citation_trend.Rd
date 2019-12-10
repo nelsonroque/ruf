@@ -4,12 +4,8 @@
 \alias{plot_googlescholar_citation_trend}
 \title{ruf}
 \usage{
-plot_googlescholar_citation_trend(
-  results,
-  color = "#0077ff",
-  size = 6,
-  angle = 45
-)
+plot_googlescholar_citation_trend(results, color = "#0077ff", size = 6,
+  angle = 45)
 }
 \arguments{
 \item{results}{class: tibble}

@@ -4,12 +4,8 @@
 \alias{make_tidy_datetime_filename}
 \title{ruf}
 \usage{
-make_tidy_datetime_filename(
-  datetime = Sys.time(),
-  timezone = "UTC",
-  prefix = "",
-  suffix = ""
-)
+make_tidy_datetime_filename(datetime = Sys.time(), timezone = "UTC",
+  prefix = "", suffix = "")
 }
 \arguments{
 \item{datetime}{class: POSIXct}

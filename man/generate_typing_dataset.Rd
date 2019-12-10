@@ -4,12 +4,8 @@
 \alias{generate_typing_dataset}
 \title{ruf}
 \usage{
-generate_typing_dataset(
-  start_ts = 1563937206,
-  start_ts_offset = 1000,
-  stream_length = 100,
-  rand_seed = 999
-)
+generate_typing_dataset(start_ts = 1563937206, start_ts_offset = 1000,
+  stream_length = 100, rand_seed = 999)
 }
 \arguments{
 \item{start_ts}{class: numeric}
