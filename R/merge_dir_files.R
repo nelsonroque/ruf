@@ -11,7 +11,7 @@
 #' @export
 merge_dir_files = function(mypath, pattern, recursive=T, return_list = T){
   filenames = list.files(path = mypath, pattern = pattern, full.names = TRUE, recursive = recursive)
-  datalist = lapply(filenames, function(x){read_appendfilename(filename=x)})
+  datalist = lapply(filenames, function(x){ruf::read_append_filename(filename=x)})
   if(return_list == F) {
     Reduce(function(x,y) {bind_rows(x,y)}, datalist)
   }
