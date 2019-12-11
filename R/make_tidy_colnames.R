@@ -8,7 +8,7 @@
 #' make_tidy_colnames(data, unique = FALSE)
 #' @export
 make_tidy_colnames <- function(.data, unique = FALSE) {
-  n <- if (is.data.frame(.data)) colnames(.data) else .data
+  n <- if (is.data.frame(.data)) {colnames(.data)} else{.data}
   
   n <- gsub("%+", "_pct_", n)
   n <- gsub("\\$+", "_dollars_", n)
