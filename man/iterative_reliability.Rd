@@ -4,8 +4,15 @@
 \alias{iterative_reliability}
 \title{ruf}
 \usage{
-iterative_reliability(data, varname, cluster_var = "studyday",
-  id_var = "id", min_day = 0, max_day = 14, autocorrelated = T)
+iterative_reliability(
+  data,
+  varname,
+  cluster_var = "studyday",
+  id_var = "id",
+  min_day = 0,
+  max_day = 14,
+  autocorrelated = T
+)
 }
 \arguments{
 \item{data}{class: data frame}

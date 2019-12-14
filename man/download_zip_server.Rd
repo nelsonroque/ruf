@@ -4,8 +4,16 @@
 \alias{download_zip_server}
 \title{ruf}
 \usage{
-download_zip_server(url, params, save_filename, save_path,
-  overwrite_zip = F, unzip = T, unzip_folder = NA, remove_zip = F)
+download_zip_server(
+  url,
+  params,
+  save_filename,
+  save_path,
+  overwrite_zip = F,
+  unzip = T,
+  unzip_folder = NA,
+  remove_zip = F
+)
 }
 \arguments{
 \item{url}{class: string}

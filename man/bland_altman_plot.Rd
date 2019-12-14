@@ -4,8 +4,14 @@
 \alias{bland_altman_plot}
 \title{ruf}
 \usage{
-bland_altman_plot(df, diff_col = NA, mean_col = NA, sd_loa = 1.96,
-  color_loa = "red", font_size = 18)
+bland_altman_plot(
+  df,
+  diff_col = NA,
+  mean_col = NA,
+  sd_loa = 1.96,
+  color_loa = "red",
+  font_size = 18
+)
 }
 \arguments{
 \item{df}{class: dataframe}

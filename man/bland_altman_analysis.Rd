@@ -4,8 +4,14 @@
 \alias{bland_altman_analysis}
 \title{ruf}
 \usage{
-bland_altman_analysis(df, id_var = "id", rt_var = "response_time",
-  assay_type_col = NA, assay1_name = NA, assay2_name = NA)
+bland_altman_analysis(
+  df,
+  id_var = "id",
+  rt_var = "response_time",
+  assay_type_col = NA,
+  assay1_name = NA,
+  assay2_name = NA
+)
 }
 \arguments{
 \item{df}{class: dataframe}

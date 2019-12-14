@@ -1,11 +1,11 @@
 #' ruf
 
-#' @name read_append_filename
+#' @name read_append_filename_csv
 #' @param filename class: string
 #' @param verbose class: boolean
 #' @import tidyverse
 #' @examples
-#' read_append_filename(filename, verbose=F)
+#' read_append_filename_csv(filename, verbose=F)
 #' @export
 read_append_filename_csv <- function(filename, verbose=F) {
   if(file.info(filename)$size > 0) {
