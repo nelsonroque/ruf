@@ -2,10 +2,6 @@
 
 #' @name pause_exec
 #' @export
-#' @param prompt class: string
-#' @param r class: string
-#' @examples
-#' pause_exec(prompt, r="character")
 pause_exec <- function(prompt, r="character") {
   
   # check if return type is missing

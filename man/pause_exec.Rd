@@ -6,14 +6,6 @@
 \usage{
 pause_exec(prompt, r = "character")
 }
-\arguments{
-\item{prompt}{class: string}
-
-\item{r}{class: string}
-}
 \description{
 ruf
-}
-\examples{
-pause_exec(prompt, r="character")
 }
