@@ -1,5 +1,8 @@
-# goal: print name of object and object contents
-# (saves from having to use paste0 and entering the variable names)
-lprint <- function(., delim=" : ") {
+#' ruf
+
+#' @name lprint
+#' @param . class: data
+#' @export
+lprint <- function(.) {
   return(list(name = deparse(substitute(.)), value= .))
 }
