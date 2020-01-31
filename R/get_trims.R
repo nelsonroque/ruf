@@ -1,4 +1,13 @@
-
+#' ruf
+#' @name get_trims
+#' @export
+#' @param .data class: data.frame
+#' @param trim_lower class: boolean
+#' @param trim_upper class: boolean
+#' @param p class: numeric
+#' @import tidyverse
+#' @examples
+#' read_any ("C:/filepath.csv")
 get_trims <- function(.data, trim_lower = NA, trim_upper = NA, p = NA) {
 
   # validate params ---------------------------------------------------------
