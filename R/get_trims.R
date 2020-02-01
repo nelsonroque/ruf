@@ -5,7 +5,7 @@
 #' @param trim_lower class: boolean
 #' @param trim_upper class: boolean
 #' @param p class: numeric
-#' @import tidyverse
+#' @import dplyr
 #' @examples
 #' read_any ("C:/filepath.csv")
 get_trims <- function(.data, trim_lower = NA, trim_upper = NA, p = NA) {
