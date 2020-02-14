@@ -2,7 +2,6 @@
 
 export(add_data_tag)
 export(add_epoch_col)
-export(add_metadate_cols)
 export(append_colname_prefix)
 export(append_metadate_cols)
 export(append_process_cols)

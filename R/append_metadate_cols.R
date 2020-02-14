@@ -24,7 +24,8 @@ append_metadate_cols <- function(data, time_var = "timestamp", time_format = "%m
                                            format=time_format,
                                            tz=timezone)) %>%
       #' append date and time features
-      mutate(dt_month = lubridate::month(dt_datetime),
+      mutate(dt_date = as.Date(dt_datetime),
+             dt_month = lubridate::month(dt_datetime),
              dt_day = lubridate::day(dt_datetime),
              dt_year = lubridate::year(dt_datetime),
              dt_week = lubridate::week(dt_datetime),
