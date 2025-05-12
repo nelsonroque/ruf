@@ -1,5 +1,9 @@
 # ruf - An R Package of random, useful functions
 
+```bash
+devtools::install_github(“nelsonroque/ruf”)
+```
+
 # Current Functions
 - iterative reliability | `iterative_reliability()`
 - stepwise reliability | `stepwise_reliability()`
